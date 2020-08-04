@@ -1,0 +1,446 @@
+/* Master Page*/
+html{
+    color: black;
+    font-family: 'Montserrat', sans-serif;
+    background-color: #18c7a4;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+}
+
+/* Navigation & Header */
+div.Header{
+    width: 100%;
+    Height: 85px;
+    background: #f5f5f5f1;
+
+    border-bottom: 1px Solid #dadada;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1); 
+    
+    position: fixed;
+    z-index: 2;
+}
+
+div.Header h1{
+    color: black;
+    font-size: +1.8em;
+    font-weight: bold;
+    text-align: left;
+    
+    padding-left: 10%;
+    padding-top: 5px;
+    float: left;
+    z-index: 1;
+}
+
+div.Header a{
+    color: black;
+    text-decoration: none;
+    transition: color 0.3s ease;
+}
+div.Header a:hover{
+    color: #18c7a4;
+    transition: color 0.3s ease;
+}
+
+div.Header nav{
+    text-align: right;
+    font-size: 1.2em;
+
+    padding-right: 10%;
+    padding-top: 33px;
+    z-index: 2;
+}
+
+div.Header nav a{
+    color: black;
+    text-decoration: none;
+    margin-left: 50px;
+    transition: color 0.5s ease;
+}
+
+div.Header nav a:hover{
+    color: #18c7a4;
+    transition: color 0.25s ease;
+}
+
+#Index .indexPage{
+    color: #18c7a4;
+}
+
+#Artists .artistsPage{
+    color: #18c7a4;
+}
+
+#CDs .cdsPage{
+    color: #18c7a4;
+}
+
+#Tracks .tracksPage{
+    color: #18c7a4;
+}
+
+/* Search Bar */
+div.searchBar{
+    text-align: right;
+    padding-top: 130px;
+    padding-right: 6%;
+    
+    margin-bottom: 25px;
+    z-index: 10;
+}
+
+div.searchBar form input[type=text], input[type=submit]{
+    color: black;
+    background-color: #f5f5f5;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 15px;
+
+    padding: 10px;
+    border: 1px solid #dadada;
+    border-radius: 5px;
+    box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.1); 
+}
+
+/* Index Content Box */
+div.indexPush{
+    width: 100%;
+    Height: 54.5px;
+}
+
+div.indexContent{
+    width: 46.25%;
+    Height: 305px;
+    font-size: 3em;
+    background: #eeeeee;
+    text-align: center;
+
+    border: 1px Solid #dadada;
+    border-radius: 10px;
+    box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.1); 
+
+    margin-top: 2.5%;
+    margin-left: 2.5%;
+    float: left;
+    transition: background 0.5s ease;
+}
+
+div.indexContent:hover{
+    width: 46.25%;
+    Height: 305px;
+    font-size: 3em;
+    background: #d1d1d1;
+    text-align: center;
+
+    border: 1px Solid #dadada;
+    border-radius: 10px;
+    box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.1); 
+
+    margin-top: 2.5%;
+    margin-left: 2.5%;
+    float: left;
+    transition: background 0.5s ease;
+}
+
+div.indexContent a.mainText{
+    color: black;
+    text-decoration: none;
+
+    display: inline-block;
+    margin-top: 120px;
+    transition: color 0.5s ease;
+}
+
+div.indexContent a:hover{
+    color: #18c7a4;
+    transition: color 0.5s ease;
+}
+
+div.indexContent p.stats{
+    font-size: 35px;
+    padding-top: 9px;
+}
+
+/* Content Box */
+div.Content{
+    width: 95%;
+    Height: 150px;
+    font-size: 2.3em;
+    background: #eeeeee;
+
+    border: 1px Solid #dadada;
+    border-radius: 10px;
+    box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.1); 
+
+    margin-bottom: 20px;
+    margin-left: 2.5%;
+    float: left;
+}
+
+div.Content p.main{
+    text-align: left;
+    position: absolute;
+
+    padding-left: 5%;
+    line-height: 43px;
+    float: left;
+    z-index: 1;
+}
+
+div.Content a{
+    text-decoration: none;
+    color: black;
+    transition: color 0.2s ease;
+}
+
+div.Content a:hover{
+    color: #18c7a4;
+    transition: color 0.2s ease;
+}
+
+div.Content p.extra{
+    text-align: left;
+    font-size: 20px;
+    position: absolute;
+
+    padding-top: 73px;
+    padding-left: 5%;
+
+    margin-left: 2px;
+    color: #3a3a3a;
+}
+
+div.Content p.NRF{
+    text-align: left;
+    position: absolute;
+
+    padding-left: 5%;
+    line-height: 75px;
+    float: left;
+}
+
+div.Content button.openButton{
+    width: 100px;
+    height: 45px;
+    
+    font-size: 1.3em;
+    text-align: center;
+    color: black;
+    background: none;
+
+    margin-top: 41px;
+    margin-left: 44%;
+    border: none;
+    transition: color 0.3s ease;
+}
+
+div.Content .openButton:hover, .openButton:focus{
+    color: #18c7a4;
+    cursor: pointer;
+    transition: color 0.3s ease;
+    outline: none;
+}
+
+div.Content button.editDelBtn{
+    color: black;
+    float: right;
+
+    width: 50px;
+    height: 45px;
+    font-size: 1.3em;
+    text-align: center;
+
+    background: none;
+
+    padding-bottom: 1.3em;
+    margin-right: 5%;
+    margin-top: 43px;
+    border: none;
+    transition: color 0.3s ease;
+    transition: 0.1s ease;
+
+    opacity: 0;
+}
+
+div.Content .editDelBtn:hover, .editDelBtn:focus{
+    color: #18c7a4;
+    cursor: pointer;
+    transition: color 0.3s ease;
+    outline: none;
+}
+
+div.Content:hover .editDelBtn {
+    opacity: 1;
+    transition: 0.2s ease;
+}
+
+div.Content form.delBtn {
+    display: inline;
+}
+
+/* Edit Record */
+div.editRec{
+    text-align: center;
+    padding-top: 20%;
+    padding-left: 20%;
+    padding-right: 20%; 
+}
+
+div.editRec h1{
+    color: black;
+    font-size: +2em;
+    font-weight: normal;
+    text-align: center;
+
+    padding-bottom: 5px;
+    z-index: 1;
+}
+
+div.editRec form input[type=time], input[type=text], input[type=number], input[type=submit]{
+    color: black;
+    background-color: white;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 15px;
+
+    padding: 10px;
+    margin-left: 5px;
+    margin-right: 5px;
+    margin-bottom: 10px;
+    border: 1px solid #dadada;
+    border-radius: 5px;
+    box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.1); 
+}
+
+div.editRec form input[type=time]{
+    padding: 8.5px;
+    width: 20%;
+}
+
+div.editRec form select{
+    color: black;
+    background-color: white;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 15px;
+    width: 350px;
+
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+
+    padding: 10px;
+    margin-left: 5px;
+    margin-right: 5px;
+    margin-bottom: 10px;
+    border: 1px solid #dadada;
+    border-radius: 5px;
+    box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.1); 
+}
+
+/* Modal Box */
+div.modalFrame{
+    display: none;
+    position: fixed;
+    z-index: 1;
+    left: 0;
+    top: 0;
+
+    height: 100%;
+    width: 100%;
+    overflow: auto;
+    background-color: rgba(0, 0, 0, 0.5);
+}
+
+div.modalBox{
+    width: 50%;
+    background-color: #eeeeee;
+    border: 1px solid #dadada;
+    border-radius: 10px;
+
+    margin: 15% auto;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1); ;
+    animation-name: modalOpen;
+    animation-duration: 0.5s;
+}
+
+@keyframes modalOpen{
+    from {opacity: 0;}
+    to {opacity: 1;}
+}
+
+div.modalBox p{
+    font-size: 25px;
+    padding-top: 5%;
+    text-align: center;
+}
+
+div.modalBox .closeBtn{
+    color: #9c9b9b;
+    float: right;
+    padding-right: 10px;
+    font-size: 30px;
+}
+
+div.modalBox .closeBtn:hover, .closeBtn:focus{
+    color: black;
+    text-decoration: none;
+    cursor: pointer;
+    transition: color 0.3s ease;
+}
+
+div.modalBox .addNewBox{
+    width: 100%;
+    text-align: center;
+    padding-bottom: 10%;
+}
+
+div.addNewBox input[type=time], input[type=text], input[type=number], input[name=submitArt]{
+    color: black;
+    background-color: white;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 15px;
+
+    padding: 10px;
+    margin-left: 5px;
+    margin-right: 5px;
+    margin-bottom: 10px;
+    border: 1px solid #dadada;
+    border-radius: 5px;
+    box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.1); 
+}
+
+div.addNewBox input[type=time]{
+    padding: 8.5px;
+    width: 20%;
+}
+
+div.addNewBox form select{
+    color: black;
+    background-color: white;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 15px;
+    width: 350px;
+
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+
+    padding: 10px;
+    margin-left: 5px;
+    margin-right: 5px;
+    margin-bottom: 10px;
+    border: 1px solid #dadada;
+    border-radius: 5px;
+    box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.1); 
+}
+
+/* Footer */
+footer{
+    color: black;
+    width: 100%;
+    text-align: center;
+
+    padding-top: 5px;
+    z-index: 2;
+}
